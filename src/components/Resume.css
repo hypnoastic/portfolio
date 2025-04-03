@@ -1,0 +1,115 @@
+.resume {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 8rem 2rem 2rem;
+  background-color: transparent;
+  color: #fff;
+}
+
+.resume h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #64ffda;
+}
+
+.resume-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 2rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+  animation: fadeIn 1s ease-in;
+}
+
+.contact-info p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+  color: #64ffda;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.resume-section {
+  margin-bottom: 2.5rem;
+}
+
+.resume-section h2 {
+  color: #64ffda;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #64ffda;
+  padding-bottom: 0.5rem;
+}
+
+.experience-item, .education-item, .project-item {
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.skills-grid span {
+  background: rgba(100, 255, 218, 0.1);
+  color: #64ffda;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.download-button {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.button {
+  background: #64ffda;
+  color: #121212;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .resume {
+    padding: 8rem 1rem 1rem;
+  }
+
+  .resume-content {
+    padding: 1.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
