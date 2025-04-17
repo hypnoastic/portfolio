@@ -31,6 +31,58 @@ const projectsData = [
     liveDemo: "https://netsignupclone.netlify.app/",
     startDate: "2025-01-15",
     endDate: "2025-01-17"
+  },
+  {
+    id: 3,
+    title: "Planner Application",
+    description: "React based website which can create different events and todo list inside each event for task management.",
+    tech: ["HTML", "CSS", "React", "JavaScript"],
+    features: [
+      "Designed event-based planner UI using React and CSS modules",
+      "Enabled creation of multiple to-do lists under each event",
+      "Implemented dynamic task addition, editing, and deletion",
+      "Ensured responsive design across all screen sizes",
+      "Used local state management for real-time task updates"
+    ],
+    githubLink: "https://github.com/hypnoastic/fancy-todo-list",
+    liveDemo: "https://dayplannerproject.netlify.app/",
+    startDate: "2025-02-03",
+    endDate: "2025-02-08"
+  },
+  {
+    id: 4,
+    title: "Ascii Art Generator",
+    description: "Full stack website with Python server and React frontend which takes an image and converts it into an ascii\n" +
+        "art by assigning characters to each divided pixel patch in the image according to their brightness levels.",
+    tech: ["HTML", "CSS", "React", "JavaScript", "Python", "OpenCV", "Pillow", "Bottle", "NumPy"],
+    features: [
+      "Built a full-stack ASCII art generator using React and Python",
+      "Implemented image upload and preview functionality on the frontend",
+      "Converted image pixels to ASCII characters based on brightness using NumPy and Pillow",
+      "Served ASCII results via a lightweight Bottle server",
+      "Displayed real-time ASCII output with styled formatting on the frontend"
+    ],
+    githubLink: "https://github.com/hypnoastic/asciiartgenerator",
+    liveDemo: "https://asciiartmaker.netlify.app/",
+    startDate: "2025-03-05",
+    endDate: "2025-03-20"
+  },
+  {
+    id: 5,
+    title: "TitanicML",
+    description: "Scikit-Learn Based ML model uses kNeighbourClassifier to train model on whether the person on titanic will\n" +
+        "survive or not with a accuracy score of 80.27%.",
+    tech: ["Python", "Scikit-learn (kNeighbourClassifier)", "Pandas", "NumPy", "Seaborn", "Matplotlib"],
+    features: [
+      "Trained a k-Nearest Neighbors model to predict Titanic survival",
+      "Achieved an accuracy score of 80.27%",
+      "Performed data preprocessing and feature engineering with Pandas",
+      "Visualized data distributions and correlations using Seaborn and Matplotlib"
+    ],
+    githubLink: "https://github.com/hypnoastic/titanicml",
+    liveDemo: "",
+    startDate: "2025-04-03",
+    endDate: "2025-04-06"
   }
 ];
 
