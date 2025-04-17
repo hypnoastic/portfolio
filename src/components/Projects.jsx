@@ -13,7 +13,7 @@ const projectsData = [
       "Speech-based responses for accessibility"
     ],
     githubLink: "https://github.com/hypnoastic/Camify",
-    liveDemo: "", // No live demo available
+    liveDemo: "",
     startDate: "2025-02-16",
     endDate: "2025-02-25"
   },

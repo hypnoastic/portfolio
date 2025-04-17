@@ -97,7 +97,7 @@
     transition: opacity 0.3s ease-in-out;
   }
 
-  /* Show menu when active */
+
   .navbar-links.active {
     display: flex;
     opacity: 1;
