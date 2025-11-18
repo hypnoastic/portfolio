@@ -4,6 +4,51 @@ import './Projects.css';
 const projectsData = [
   {
     id: 1,
+    title: "Routegenie - Voice Based Multimodal Navigation System",
+    description: "Voice-driven navigation using Gemini Live's bidirectional streaming and real-time tool calling to interpret natural language, add multiple stops via voice commands, and generate dynamic routes.",
+    tech: ["Vite", "ReactJS", "FastAPI", "WebSockets", "Google Agent Development Kit", "Gemini Live API", "Map APIs"],
+    features: [
+      "Enabled hands-free navigation with bi-directional audio streaming",
+      "Automated routing workflows through intelligent tool calling and Places API integration",
+      "Delivered conversational UI with live map updates and continuous context retention"
+    ],
+    githubLink: "https://github.com/hypnoastic/routegenie",
+    liveDemo: "https://routegenie.netlify.app",
+    startDate: "2025-10-01",
+    endDate: "2025-10-31"
+  },
+  {
+    id: 2,
+    title: "Panne – AI Collaboration Platform",
+    description: "Notion-like AI-powered collaboration platform with real-time multi-user editing, advanced sharing permissions, and AI-assisted note creation with version history.",
+    tech: ["ReactJS", "Node.js", "PostgreSQL (Neon)", "WebSockets", "OpenAI API", "Cloudinary"],
+    features: [
+      "Delivered Google Docs-style live collaboration with presence tracking",
+      "Improved productivity through contextual AI and granular permissions",
+      "Enabled seamless AI-assisted content generation with rich editor tools"
+    ],
+    githubLink: "https://github.com/hypnoastic/panne",
+    liveDemo: "https://panne.netlify.app",
+    startDate: "2025-08-01",
+    endDate: "2025-08-31"
+  },
+  {
+    id: 3,
+    title: "PricePulse – Automated Amazon Price Tracker",
+    description: "SaaS app that scrapes Amazon product data using Scrapy, tracks prices hourly via schedulers, and sends email alerts with trend visualization.",
+    tech: ["Vite", "ReactJS", "FastAPI", "Scrapy", "Prisma ORM", "Neon PostgreSQL", "Chart.js", "Google OAuth", "OTP Auth"],
+    features: [
+      "Automated hourly price tracking with email-based alerts",
+      "Delivered secure SaaS UI with Google/OTP authentication",
+      "Provided historical price insights with interactive Chart.js visualizations"
+    ],
+    githubLink: "https://github.com/hypnoastic/price_pulse",
+    liveDemo: "https://amzpricepulse.netlify.app",
+    startDate: "2025-06-01",
+    endDate: "2025-06-30"
+  },
+  {
+    id: 4,
     title: "Camify",
     description: "AI-powered Python app for hands-free image analysis using Google Gemini, voice commands, and text-to-speech.",
     tech: ["Python", "OpenCV", "PIL", "Gemini API", "Speech Recognition", "pyttsx3"],
@@ -18,7 +63,7 @@ const projectsData = [
     endDate: "2025-02-25"
   },
   {
-    id: 2,
+    id: 5,
     title: "Netflix Sign-Up Page Clone",
     description: "Built a responsive Netflix signup page clone using HTML and CSS, replicating the original design with structured layout and smooth animations.",
     tech: ["HTML", "CSS"],
@@ -33,7 +78,7 @@ const projectsData = [
     endDate: "2025-01-17"
   },
   {
-    id: 3,
+    id: 6,
     title: "Planner Application",
     description: "React based website which can create different events and todo list inside each event for task management.",
     tech: ["HTML", "CSS", "React", "JavaScript"],
@@ -50,7 +95,7 @@ const projectsData = [
     endDate: "2025-02-08"
   },
   {
-    id: 4,
+    id: 7,
     title: "Ascii Art Generator",
     description: "Full stack website with Python server and React frontend which takes an image and converts it into an ascii\n" +
         "art by assigning characters to each divided pixel patch in the image according to their brightness levels.",
@@ -68,7 +113,7 @@ const projectsData = [
     endDate: "2025-03-20"
   },
   {
-    id: 5,
+    id: 8,
     title: "TitanicML",
     description: "Scikit-Learn Based ML model uses kNeighbourClassifier to train model on whether the person on titanic will\n" +
         "survive or not with a accuracy score of 80.27%.",
