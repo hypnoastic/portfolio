@@ -6,98 +6,97 @@
   color: #fff;
 }
 
-.resume h1 {
-  text-align: center;
-  margin-bottom: 3rem;
-  color: #64ffda;
-}
-
-.resume-content {
-  width: 90%;
-  max-width: 1200px;
+.resume-shell {
+  width: min(1200px, 92%);
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  padding: 2rem;
-  border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
-  animation: fadeIn 1s ease-in;
 }
 
-.contact-info p {
+.resume-kicker {
+  margin: 0 0 0.75rem;
   text-align: center;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8ef7e5;
+  font-size: 0.85rem;
 }
 
-.contact-info a {
+.resume h1 {
+  margin: 0;
+  text-align: center;
   color: #64ffda;
-  text-decoration: none;
 }
 
-.contact-info a:hover {
-  text-decoration: underline;
+.resume-intro {
+  max-width: 720px;
+  margin: 1rem auto 2rem;
+  text-align: center;
+  color: #c7d2eb;
+  line-height: 1.7;
 }
 
-.resume-section {
-  margin-bottom: 2.5rem;
-}
-
-.resume-section h2 {
-  color: #64ffda;
-  margin-bottom: 1.5rem;
-  border-bottom: 2px solid #64ffda;
-  padding-bottom: 0.5rem;
-}
-
-.experience-item, .education-item, .project-item {
-  margin-bottom: 2rem;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+.resume-actions {
+  display: flex;
+  justify-content: center;
   gap: 1rem;
-}
-
-.skills-grid span {
-  background: rgba(100, 255, 218, 0.1);
-  color: #64ffda;
-  padding: 0.5rem 1rem;
-  border-radius: 15px;
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-.download-button {
-  text-align: center;
-  margin-top: 3rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .button {
-  background: #64ffda;
-  color: #121212;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  padding: 0.85rem 1.35rem;
+  border-radius: 10px;
   text-decoration: none;
-  font-weight: bold;
-  transition: opacity 0.3s ease;
+  font-weight: 700;
+  background: #64ffda;
+  color: #08111f;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.secondary-button {
+  background: transparent;
+  color: #64ffda;
+  border: 1px solid rgba(100, 255, 218, 0.55);
 }
 
 .button:hover {
-  opacity: 0.8;
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.resume-preview {
+  padding: 1.25rem;
+  border-radius: 18px;
+  border: 1px solid rgba(100, 255, 218, 0.18);
+  background:
+    linear-gradient(180deg, rgba(17, 34, 64, 0.92), rgba(10, 25, 47, 0.88)),
+    rgba(255, 255, 255, 0.04);
+  box-shadow: 0 18px 40px rgba(2, 12, 27, 0.32);
+  backdrop-filter: blur(18px);
+}
+
+.resume-frame {
+  width: 100%;
+  min-height: 78vh;
+  border: 0;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.resume-fallback {
+  margin: 0;
+  color: #c7d2eb;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.resume-fallback a {
+  color: #64ffda;
 }
 
 @media (max-width: 768px) {
@@ -105,11 +104,23 @@
     padding: 8rem 1rem 1rem;
   }
 
-  .resume-content {
-    padding: 1.5rem;
+  .resume-shell {
+    width: 100%;
   }
 
-  .skills-grid {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  .resume-actions {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .resume-preview {
+    padding: 0.9rem;
+  }
+
+  .resume-frame {
+    min-height: 70vh;
   }
 }
